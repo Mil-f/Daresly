@@ -1,0 +1,246 @@
+body {
+  font-family: 'Montserrat', Arial, sans-serif;
+  background-color: #f9f9f9;
+  margin: 0;
+  padding: 0;
+}
+
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+#Navi {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header {
+  background-color: #388e3c;     
+  padding: 1rem 2rem;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+
+#Webname {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.2);
+}
+
+#headeritems {
+  display: flex;
+  gap: 2rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+
+#headeritems li {
+  display: inline-block;
+  text-decoration: none;
+}
+
+#headeritems a {
+  position: relative;
+  font-weight: 600;
+  transition: color 0.2s;
+}
+
+#headeritems a::after {
+  content: '';
+  position: absolute;
+  left: 0; right: 0; bottom: -4px;
+  height: 2px;
+  background: #fff;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.3s ease;
+}
+
+#headeritems a:hover {
+  color: #e0f7e9;
+}
+
+#headeritems a:hover::after {
+  transform: scaleX(1);
+}
+.profile-pill {
+  display: flex;
+  align-items: center;
+  background-color: white;
+  color: #333;
+  padding: 0.3rem 0.6rem;
+  border-radius: 999px;
+  gap: 0.5rem;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  transition: background-color 0.2s;
+}
+
+.profile-pill:hover {
+  background-color: #f0f0f0;
+}
+
+.profile-img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.profile-name {
+  font-weight: bold;
+  font-size: 0.95rem;
+}
+
+.profile-wrapper {
+  position: relative;
+}
+
+.profile-dropdown {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+  overflow: hidden;
+  display: none;
+  flex-direction: column;
+  min-width: 160px;
+  z-index: 100;
+}
+
+.profile-dropdown a {
+  padding: 0.75rem 1rem;
+  color: #333;
+  text-decoration: none;
+  font-weight: 500;
+  transition: background 0.2s;
+}
+
+.profile-dropdown a:hover {
+  background: #f0f0f0;
+}
+
+
+#intro {
+  background: linear-gradient(135deg, #4CAF50 0%, #66BB6A 100%);
+  padding: 4rem 1rem;
+  text-align: center;
+  color: white;
+}
+
+#intro h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  text-shadow: 1px 1px 4px rgba(0,0,0,0.2);
+}
+
+#searchBar {
+  width: 100%;
+  max-width: 400px;
+  padding: 0.75rem 1rem;
+  border: none;
+  border-radius: 999px;
+  font-size: 1rem;
+  outline: none;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  transition: box-shadow 0.2s;
+}
+
+#searchBar:focus {
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+#tutorList {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 2rem;
+  gap: 1rem;
+}
+
+.tutor-card {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 1.5rem;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  width: 280px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+
+
+.tutor-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+.tutor-img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 1rem;
+  border: 3px solid #4CAF50;
+}
+
+.tutor-info h2 {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+  color: #333;
+}
+
+.tutor-info p {
+  margin: 0.3rem 0;
+  color: #555;
+}
+
+.contact-btn {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.5rem 1rem;
+  background-color: #25D366;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.contact-btn:hover {
+  background-color: #1ebe5d;
+}
+
+main#tutorList {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+}
+
+@media (max-width: 768px) {
+  .tutor-card {
+    width: calc(50% - 1rem);
+  }
+}
+
+@media (max-width: 480px) {
+  .tutor-card {
+    width: 100%;
+  }
+}

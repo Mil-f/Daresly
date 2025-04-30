@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ismailia Tutor Finder</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+  <header>
+    <div id="Navi">
+      <div id="Webname">Daresly</div>
+      <nav>
+        <ul id="headeritems">
+          <li><a href="#">Homepage</a></li>
+          <li><a href="#">Tutors</a></li>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Contact Us</a></li>
+
+        </ul>
+      </nav>
+      <div class="profile-wrapper">
+        <div class="profile-pill" id="profileToggle">
+          <img src="visual-depiction-of-what-happened-to-tiny-mita-made-by-me-v0-7fb6dhzahj9e1.webp" alt="Profile Picture" class="profile-img">
+          <span class="profile-name">Magd</span>
+        </div>
+        <div class="profile-dropdown" id="profileDropdown">
+          <a href="#">My Profile</a>
+          <a href="#">Settings</a>
+          <a href="#">Logout</a>
+        </div>
+      </div>      
+    </div>
+  </header>
+  
+  <div id = "intro">
+    <h1>Find Verified Tutors in Ismailia</h1>
+    <input type="text" id="searchBar" placeholder="Search by subject..." onkeyup="filterTutors()">
+  </div>
+  
+
+  <main id="tutorList">
+    <!-- Tutors will be loaded here -->
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
