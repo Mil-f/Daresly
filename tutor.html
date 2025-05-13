@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Tutor Profile - Daresly</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .contact-btn {
+      display: inline-block;
+      margin-top: 1em;
+      padding: 0.75em 1.5em;
+      background-color: #25D366;
+      color: white;
+      font-weight: 600;
+      text-decoration: none;
+      border-radius: 8px;
+      transition: background-color 0.3s ease;
+    }
+
+    .contact-btn:hover {
+      background-color: #1ebe5d;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div id="Navi">
+      <div id="Webname">Daresly</div>
+      <nav>
+        <ul id="headeritems" class="nav-links">
+          <li><a href="index.html">Homepage</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+      </nav>
+      <div class="hamburger" id="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <div class="profile-wrapper">
+        <div class="profile-pill" id="profileToggle">
+          <img src="images/magd.jpg" alt="Profile" class="profile-img">
+          <span class="profile-name">Magd</span>
+        </div>
+        <div class="profile-dropdown">
+          <a href="#">My Profile</a>
+          <a href="#">Settings</a>
+          <a href="#">Logout</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="page-content tutor-profile">
+    <div class="profile-header">
+      <img src="images/DrBasek.jpg" alt="Hassan Mahmoud">
+      <div>
+        <h1>Dr. Basel Hafiz</h1>
+        <p class="subheading">Professor &bull; 6 Years Experience</p>
+      </div>
+    </div>
+
+    <section class="bio-section">
+      <h2>About Me</h2>
+      <p>احلى دكتور في الجامعة كلها</p>
+    </section>
+
+    <section class="details-section">
+      <h2>Details</h2>
+      <ul>
+        <li><strong>Area:</strong> Sheikh Zayed</li>
+        <li><strong>Subjects:</strong>  الجدعنة</li>
+      </ul>
+      <!-- زرار التواصل ع الواتساب -->
+      <a href="https://wa.me/201009988776" target="_blank" class="contact-btn">Contact</a>
+    </section>
+
+    <section class="reviews-section">
+      <h2>Student Reviews</h2>
+      <div class="review-card">
+        <p>راجل فهمان الصراحة”</p>
+        <span class="review-author">- Omar A.</span>
+      </div>
+      <div class="review-card">
+        <p>“لا والله احلى و احسن دكتور ”</p>
+        <span class="review-author">- Sara M.</span>
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

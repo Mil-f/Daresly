@@ -11,16 +11,14 @@
 <body>
   <header>
     <div id="Navi">
-      <div id="Webname">Daresly</div>
+      <div id="Webname">Daresly</div>  
       <nav>
-        <ul id="headeritems">
-          <li><a href="#">Homepage</a></li>
-          <li><a href="#">Tutors</a></li>
-          <li><a href="#">About Us</a></li>
-          <li><a href="#">Contact Us</a></li>
-
+        <ul id="headeritems" class="nav-links">
+          <li><a href="index.html">Homepage</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
         </ul>
-      </nav>
+      </nav>      
       <div class="profile-wrapper">
         <div class="profile-pill" id="profileToggle">
           <img src="visual-depiction-of-what-happened-to-tiny-mita-made-by-me-v0-7fb6dhzahj9e1.webp" alt="Profile Picture" class="profile-img">
@@ -37,7 +35,10 @@
   
   <div id = "intro">
     <h1>Find Verified Tutors in Ismailia</h1>
-    <input type="text" id="searchBar" placeholder="Search by subject..." onkeyup="filterTutors()">
+    <div id="intro-controls">
+      <input type="text" id="searchBar" placeholder="Search by subject…" onkeyup="applyFilters()">
+      <select id="subjectFilter"></select>
+    </div>        
   </div>
   
 

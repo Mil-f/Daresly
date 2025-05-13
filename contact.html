@@ -1,0 +1,68 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact Us - Daresly</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+    <div id="Navi">
+      <div id="Webname">Daresly</div>
+      <nav>
+        <ul id="headeritems" class="nav-links">
+          <li><a href="index.html">Homepage</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+      </nav>
+      <div class="hamburger" id="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <div class="profile-wrapper">
+        <div class="profile-pill" id="profileToggle">
+          <img src="images/magd.jpg" alt="Profile" class="profile-img">
+          <span class="profile-name">Magd</span>
+        </div>
+        <div class="profile-dropdown">
+          <a href="#">My Profile</a>
+          <a href="#">Settings</a>
+          <a href="#">Logout</a>
+        </div>
+      </div>
+    </div>
+  </header>
+      
+
+  <main class="page-content">
+    <section class="contact-section">
+      <h1>Get in Touch</h1>
+      <form class="contact-form">
+        <label for="name">Name</label>
+        <input type="text" id="name" placeholder="Your Name" required>
+
+        <label for="email">Email</label>
+        <input type="email" id="email" placeholder="you@example.com" required>
+
+        <label for="message">Message</label>
+        <textarea id="message" rows="6" placeholder="How can we help?" required></textarea>
+
+        <button type="submit">Send Message</button>
+      </form>
+    </section>
+  </main>
+
+  <script>
+    document.querySelector('.contact-form').addEventListener('submit', e => {
+      e.preventDefault();
+      alert('Thank you! We will get back to you soon.');
+      e.target.reset();
+    });
+  </script>
+  <script src="script.js"></script>
+</body>
+</html>
